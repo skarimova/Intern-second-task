@@ -1,0 +1,23 @@
+$font-weight-normal: 500;
+
+$border-radius: 1.5rem;
+
+$pagination-active-color: black;
+$pagination-active-bg: #FDD446;
+$pagination-color: black;
+$pagination-border-width: 0;
+
+$table-bg: #FDD446;
+$table-accent-bg: #FDD446;
+$table-th-font-weight: normal;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 769px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@import '~bootstrap/scss/bootstrap';

@@ -1,10 +1,11 @@
-import Pagination from 'react-bootstrap/Pagination';
+import { Pagination } from 'react-bootstrap';
 
-function Paginations() {
+const Paginations = () => {
+  
   return (
     <Pagination className='d-flex justify-content-center'> 
       <Pagination.First/>
-      <Pagination.Item active>{1}</Pagination.Item>
+      <Pagination.Item active className='rounded-circle'>{1}</Pagination.Item>
       <Pagination.Item>{2}</Pagination.Item>
       <Pagination.Item>{3}</Pagination.Item>
       <Pagination.Item>{4}</Pagination.Item>

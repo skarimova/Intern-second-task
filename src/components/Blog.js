@@ -54,11 +54,13 @@ const featuredPosts = [
 
 function Blog() {
     return (
-        <Container className="justify-content-center p-3" fluid>
-            <Row md={4} sm={3} xs={2}>
-                {featuredPosts.map((post) => (<Col>
-                                                <Cards key={post.id} post={post} />
-                                              </Col>))}
+        <Container className="justify-content-center p-4" fluid>
+            <Row>
+              {featuredPosts.map((post, index) => (
+                <Col key={index} md={3} sm={4} xs={12} className="mb-3">
+                  <Cards post={post} />
+                </Col>
+              ))}
             </Row>
         </Container>
     )
